@@ -2,18 +2,18 @@
   "stats": {
     "suites": 5,
     "tests": 13,
-    "passes": 6,
+    "passes": 9,
     "pending": 0,
-    "failures": 7,
-    "start": "2022-11-04T14:25:50.636Z",
-    "end": "2022-11-04T14:25:51.518Z",
-    "duration": 882
+    "failures": 4,
+    "start": "2022-11-04T22:14:23.246Z",
+    "end": "2022-11-04T22:14:24.413Z",
+    "duration": 1167
   },
   "tests": [
     {
       "title": "returns a distance in blocks",
       "fullTitle": "index.js distanceFromHqInBlocks() returns a distance in blocks",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -27,14 +27,14 @@
     {
       "title": "calculates distances below 42nd street",
       "fullTitle": "index.js distanceFromHqInBlocks() calculates distances below 42nd street",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a distance in feet",
       "fullTitle": "index.js distanceFromHqInFeet() returns a distance in feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -55,41 +55,35 @@
     {
       "title": "returns the distance travelled in feet",
       "fullTitle": "index.js distanceTravelledInFeet() returns the distance travelled in feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
+      "err": {}
     },
     {
       "title": "returns a distance in feet",
       "fullTitle": "index.js distanceTravelledInFeet() returns a distance in feet",
       "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
+      "err": {}
     },
     {
       "title": "returns distance when destination is below distance",
       "fullTitle": "index.js distanceTravelledInFeet() returns distance when destination is below distance",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
+      "err": {}
     },
     {
       "title": "gives customers a free sample",
       "fullTitle": "index.js calculatesFarePrice(start, destination) gives customers a free sample",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:46:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 264 to equal 0",
+        "showDiff": true,
+        "actual": "264",
+        "expected": "0",
+        "stack": "AssertionError: expected 264 to equal 0\n    at Context.<anonymous> (test/indexTest.js:46:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -98,18 +92,24 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:51:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 528 to equal 2.56",
+        "showDiff": true,
+        "actual": "528",
+        "expected": "2.56",
+        "stack": "AssertionError: expected 528 to equal 2.56\n    at Context.<anonymous> (test/indexTest.js:51:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "charges 25 dollars for a distance over 2000 feet",
       "fullTitle": "index.js calculatesFarePrice(start, destination) charges 25 dollars for a distance over 2000 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:55:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 'it will be 25 dollars ' to equal 25",
+        "showDiff": true,
+        "actual": "it will be 25 dollars ",
+        "expected": 25,
+        "stack": "AssertionError: expected 'it will be 25 dollars ' to equal 25\n    at Context.<anonymous> (test/indexTest.js:55:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -118,51 +118,27 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:59:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 'it will be 25 dollars ' to equal 'cannot travel that far'",
+        "showDiff": true,
+        "actual": "it will be 25 dollars ",
+        "expected": "cannot travel that far",
+        "stack": "AssertionError: expected 'it will be 25 dollars ' to equal 'cannot travel that far'\n    at Context.<anonymous> (test/indexTest.js:59:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "returns the distance travelled in feet",
-      "fullTitle": "index.js distanceTravelledInFeet() returns the distance travelled in feet",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:32:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
-    },
-    {
-      "title": "returns a distance in feet",
-      "fullTitle": "index.js distanceTravelledInFeet() returns a distance in feet",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:36:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
-    },
-    {
-      "title": "returns distance when destination is below distance",
-      "fullTitle": "index.js distanceTravelledInFeet() returns distance when destination is below distance",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: distanceTravelledInFeet is not defined\n    at Context.<anonymous> (test/indexTest.js:40:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "distanceTravelledInFeet is not defined"
-      }
-    },
-    {
       "title": "gives customers a free sample",
       "fullTitle": "index.js calculatesFarePrice(start, destination) gives customers a free sample",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:46:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 264 to equal 0",
+        "showDiff": true,
+        "actual": "264",
+        "expected": "0",
+        "stack": "AssertionError: expected 264 to equal 0\n    at Context.<anonymous> (test/indexTest.js:46:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -171,18 +147,24 @@
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:51:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 528 to equal 2.56",
+        "showDiff": true,
+        "actual": "528",
+        "expected": "2.56",
+        "stack": "AssertionError: expected 528 to equal 2.56\n    at Context.<anonymous> (test/indexTest.js:51:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "charges 25 dollars for a distance over 2000 feet",
       "fullTitle": "index.js calculatesFarePrice(start, destination) charges 25 dollars for a distance over 2000 feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:55:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 'it will be 25 dollars ' to equal 25",
+        "showDiff": true,
+        "actual": "it will be 25 dollars ",
+        "expected": 25,
+        "stack": "AssertionError: expected 'it will be 25 dollars ' to equal 25\n    at Context.<anonymous> (test/indexTest.js:55:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -191,8 +173,11 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:59:7)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected 'it will be 25 dollars ' to equal 'cannot travel that far'",
+        "showDiff": true,
+        "actual": "it will be 25 dollars ",
+        "expected": "cannot travel that far",
+        "stack": "AssertionError: expected 'it will be 25 dollars ' to equal 'cannot travel that far'\n    at Context.<anonymous> (test/indexTest.js:59:46)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -200,7 +185,7 @@
     {
       "title": "returns a distance in blocks",
       "fullTitle": "index.js distanceFromHqInBlocks() returns a distance in blocks",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -214,14 +199,14 @@
     {
       "title": "calculates distances below 42nd street",
       "fullTitle": "index.js distanceFromHqInBlocks() calculates distances below 42nd street",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "returns a distance in feet",
       "fullTitle": "index.js distanceFromHqInFeet() returns a distance in feet",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -236,6 +221,27 @@
       "title": "calculates distances below 42nd street",
       "fullTitle": "index.js distanceFromHqInFeet() calculates distances below 42nd street",
       "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the distance travelled in feet",
+      "fullTitle": "index.js distanceTravelledInFeet() returns the distance travelled in feet",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns a distance in feet",
+      "fullTitle": "index.js distanceTravelledInFeet() returns a distance in feet",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns distance when destination is below distance",
+      "fullTitle": "index.js distanceTravelledInFeet() returns distance when destination is below distance",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
